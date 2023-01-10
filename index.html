@@ -14,20 +14,33 @@
 
 <body>
     <!--  navigation -->
-    <nav class=" navbar navbar-expand-lg navbar-light bg-light ">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class=" navbar-brand" href="http://127.0.0.1:5500/index.html">JQ Music Bio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-            <div class="navbar-nav">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#favourite-albums">Fave Albums</a>
-                <a class="nav-link" href="#detail-albums">Albums</a>
-                <a class="nav-link" href="#overrated-albums">Overrated</a>
-            </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#favourite-albums">Fave Albums</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#reviews">Reviews <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#favourite-albums">Fave Albums</a>
+                </li>
+                <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#overrated-albums">Overrated</a>
+                </li>
+
+            </ul>
         </div>
     </nav>
     <section class="hero">
@@ -46,24 +59,33 @@
                         that I
                         can't stop replaying all over again and again
                     </p>
+                    <!-- <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Quick Info
+                    </button> -->
+                    <button class="btn buttonNode" type="button"> Quick info</button>
+                    <div class="toggleDiv" id="collapseExample">
+                        <h5 class="title card-header text-md-center text-sm-center text-lg-left text-xl-left ">
+                            Favourite
+                            Genres</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Pop</li>
+                            <li class="list-group-item">OPM</li>
+                            <li class="list-group-item">Sould R&B</li>
+                            <li class="list-group-item">R&B</li>
+                        </ul>
 
-                    <h5 class="title card-header text-md-center text-sm-center text-lg-left text-xl-left ">Favourite
-                        Genres</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Pop</li>
-                        <li class="list-group-item">OPM</li>
-                        <li class="list-group-item">Sould R&B</li>
-                        <li class="list-group-item">R&B</li>
-                    </ul>
+                        <h5 class="title mt-2 card-header text-md-center text-sm-center text-lg-left text-xl-left">
+                            Favourite
+                            Artist</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">88&Rising</li>
+                            <li class="list-group-item">GOT7</li>
+                            <li class="list-group-item">Ariana Grande</li>
+                            <li class="list-group-item">OPM Artist</li>
+                        </ul>
+                    </div>
 
-                    <h5 class="title mt-2 card-header text-md-center text-sm-center text-lg-left text-xl-left">Favourite
-                        Artist</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">88&Rising</li>
-                        <li class="list-group-item">GOT7</li>
-                        <li class="list-group-item">Ariana Grande</li>
-                        <li class="list-group-item">OPM Artist</li>
-                    </ul>
                 </div>
             </div>
     </section>
@@ -100,8 +122,12 @@
           Favourite albums-->
     <section id="favourite-albums" class="favourite-albums py-5">
         <div class="container">
+            <a class="btn" type="button" data-toggle="collapse" data-target="#fave-albums" aria-expanded="false"
+                aria-controls="fave-albums">
+                Favourite Albums
+            </a>
             <h2 class="text-md-center text-sm-center text-lg-left text-xl-left ">Favourite albums</h2>
-            <div class="row">
+            <div class="row collapse" id="fave-albums">
                 <div class="col col-md-4 col-lg-4 col-xl-3 mb-2">
                     <div class="music-cards card">
                         <a href="#album1"><img
@@ -297,12 +323,46 @@
     </section>
 
     <!-- Music experince section-->
+    <section class="artist">
+        <div class="container py-5">
+            <h2 class="text-md-center text-sm-center text-lg-left text-xl-left ">Favourite Artist</h2>
+            <hr>
+            <a class="btn" type="button" data-toggle="collapse" data-target="#fave-artist" aria-expanded="false"
+                aria-controls="fave-artist">
+                Wanna know?!
+            </a>
+            <div class="row collapse" id="fave-artist">
+                <h3 class="text-md-center text-sm-center text-lg-left text-xl-left">Ariana Grande</h3>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Music related events -->
 
     <!-- footer -->
 
+    <!-- script tags -->
 
+    <script>
+        function toggleDiv() {
+            let btnNode = document.querySelectorAll('.btn.buttonNode')
+            let toggleDivNode = document.querySelectorAll('div.toggleDiv')
+            btnNode.addEventListner("click", function () {
+                toggleDivNode.classList.toggle('invisible')
+            })
+        }
+
+        toggleDiv();
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
