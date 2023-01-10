@@ -43,11 +43,55 @@ td {
   height: 730px;
 }
 
+.artist-card {
+  opacity: 50%;
+}
+
+.artist-card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.site {
+  color: white;
+  text-decoration: none;
+}
+
+.card-header.footerHead {
+  background: rgb(240, 210, 215);
+}
+
+.btn.btn-primary {
+  background-color: rgb(240, 210, 215) !important;
+  border-color: rgb(240, 210, 215) !important;
+  color: rgb(88, 23, 34);
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
+  .covers {
+    width: 200px;
+    height: 200px;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
+  .covers {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
@@ -57,10 +101,23 @@ td {
     object-fit: cover;
     border-radius: 57% 43% 70% 30% / 30% 68% 32% 70%;
   }
+
+  .covers {
+    width: 200px;
+    height: 200px;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+  .covers {
+    width: 300px;
+    height: 300px;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+  .covers {
+    width: 300px;
+    height: 300px;
+  }
 }
