@@ -27,8 +27,20 @@ td {
   text-transform: capitalize;
 }
 
+.share-btn {
+  background-color: rgb(235, 193, 193) !important;
+}
+
 .favourite-albums {
   background-color: rgb(253, 242, 244);
+}
+
+.overrated {
+  background-color: rgb(253, 242, 244);
+}
+
+.music-cards {
+  height: 730px;
 }
 
 /* Extra small devices (phones, 600px and down) */
