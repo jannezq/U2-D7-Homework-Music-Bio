@@ -1,8 +1,8 @@
 .hero {
-  background-color: rgb(240, 210, 215);
+  background-color: rgb(253, 242, 244);
 }
 .navbar {
-  background-color: rgb(253, 242, 244) !important;
+  background-color: rgb(240, 210, 215) !important;
 }
 
 .profile-img {
@@ -17,8 +17,18 @@ li {
 }
 
 span.card-listing {
+  font-size: 15px;
   background-color: rgb(235, 193, 193);
   margin-block: 1px;
+  display: inline-block;
+}
+
+td {
+  text-transform: capitalize;
+}
+
+.favourite-albums {
+  background-color: rgb(253, 242, 244);
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -41,7 +51,4 @@ span.card-listing {
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  .music-cards {
-    width: 25%;
-  }
 }
