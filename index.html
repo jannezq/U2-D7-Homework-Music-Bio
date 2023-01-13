@@ -9,56 +9,77 @@
     <link rel="stylesheet" href="normalised.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- my custon stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!--  navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class=" navbar-brand" href="http://127.0.0.1:5500/index.html">JQ Music Bio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#favourite-albums">Fave Albums</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#reviews">Reviews <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#favourite-albums">Fave Albums</a>
-                </li>
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" href="#overrated-albums">Overrated</a>
-                </li>
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" href="#artist">Artist</a>
-                </li>
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" href="#album-covers">Gallery</a>
-                </li>
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" href="#footer">Footer</a>
-                </li>
 
 
+    <section class="header">
+        <div class="jumbotron text-center d-flex flex-column">
+            <nav class="navbar navbar-expand-lg navbar-dark">
 
-            </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#mine">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#favourite-albums">Fave Albums</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#reviews">Reviews <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#favourite-albums">Fave Albums</a>
+                        </li>
+                        <li class="nav-item active mr-3">
+                            <a class="nav-link" href="#overrated-albums">Overrated</a>
+                        </li>
+                        <li class="nav-item active mr-3">
+                            <a class="nav-link" href="#artist">Artist</a>
+                        </li>
+                        <li class="nav-item active mr-3">
+                            <a class="nav-link" href="#album-covers">Gallery</a>
+                        </li>
+                        <li class="nav-item active mr-3"><a class="nav-link" href="#footer">Footer</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container d-flex">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class=" display-4">JQ Music Bar</h1>
+                    <p class="lead ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga est possimus,
+                        asperiores
+                        libero dignissimos, illo, incidunt harum perferendis accusamus maiores earum? Odio
+                        aspernatur id
+                        quod ab est sunt vitae deserunt.
+                    </p>
+                </div>
+            </div>
         </div>
-    </nav>
-    <section class="hero">
-        <div class="container container-sm container-md container-lg container-xl ">
-            <!-- HERO SECTION -->
-            <!-- Short biographt section -->
-            <div class="row py-5">
+    </section>
+
+    <section id="mine" class="hero d-flex ">
+        <!-- HERO SECTION -->
+        <!-- Short biographt section -->
+        <!-- <div class="row ">
                 <div class="col d-flex align-items-lg-center align-items-xl-center">
                     <div class="profile-img mx-auto"><img class="profile-img img-thumbnail
                 " src="./assests/20220606_170810.jpg" alt="Jovellyn Profile photo" /></div>
@@ -69,12 +90,12 @@
                     <p>Open minded to music~ I love listening all types of genre! Of course I have genres and artist
                         that I
                         can't stop replaying all over again and again
-                    </p>
-                    <!-- <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample"
+                    </p> -->
+        <!-- <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample"
                         aria-expanded="false" aria-controls="collapseExample">
                         Quick Info
                     </button> -->
-                    <button class="btn buttonNode" type="button"> Quick info</button>
+        <!-- <button class="btn buttonNode" type="button"> Quick info</button>
                     <div class="toggleDiv" id="collapseExample">
                         <h5 class="title card-header text-md-center text-sm-center text-lg-left text-xl-left ">
                             Favourite
@@ -96,9 +117,40 @@
                             <li class="list-group-item">OPM Artist</li>
                         </ul>
                     </div>
+                </div>
+            </div> -->
 
+        <div class="container-fluid d-flex">
+            <div
+                class="row d-flex justify-md-content-center align-md-items-center justify-xl-content-center align-xl-items-center">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="profile-img mx-auto">
+                        <img class="profile-img img-thumbnail
+                            " src="./assests/20220606_170810.jpg" alt="Jovellyn Profile photo" data-toggle="collapse"
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" />
+                    </div>
+                </div>
+                <div id="profile-bio" class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                    <h1 class="text-center mt-3 ">~ Jovellyns Music Bio ~</h1>
+                    <p>Open minded to music~ I love listening all types of genre! Of course I have genres and artist
+                        that I
+                        can't stop replaying all over again and again
+                    </p>
+                    <div>
+                        <h5 class="title mt-2 card-header text-md-center text-sm-center text-lg-left text-xl-left">
+                            Favourite
+                            Artist</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">88&Rising</li>
+                            <li class="list-group-item">GOT7</li>
+                            <li class="list-group-item">Ariana Grande</li>
+                            <li class="list-group-item">OPM Artist</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
+
     </section>
 
 
@@ -106,21 +158,28 @@
 
     <section id="about" class="music-about py-5">
         <div class="container">
-            <h2 class="col text-sm-center text-md-center text-lg-left text-xl-left">About my music interest!</h2>
+            <h2 class="col text-sm-center text-md-center text-lg-left text-xl-left">About my music
+                interest!</h2>
             <div class="row">
                 <p class="col-sm col-md col-lg-7 col-xl-8 ">
-                    Music is such a wide vast of genre from countries all over the world. I love listing to music almost
+                    Music is such a wide vast of genre from countries all over the world. I love
+                    listing to music almost
                     veryday of my life.
-                    When I am cooking, to working on code, to just randomly vibing as I scroll social medias such as
+                    When I am cooking, to working on code, to just randomly vibing as I scroll
+                    social medias such as
                     Twitter etc..
-                    Growing up I loved daning and was highly influence from watching dance videos and now youtube videos
+                    Growing up I loved daning and was highly influence from watching dance videos
+                    and now youtube videos
                     of different choeography.
-                    Back in high school I was in a choir for almost my young school life till 3rd of high school. My
+                    Back in high school I was in a choir for almost my young school life till 3rd of
+                    high school. My
                     love for classical and opera music lasted till
                     I let choir. I then got influence in more genres such as r&b and k-pop.
-                    From my mid teens to now. I enjoy listening to K-pop, J-pop, OPM (filipino music), R&B and many
+                    From my mid teens to now. I enjoy listening to K-pop, J-pop, OPM (filipino
+                    music), R&B and many
                     more.
-                    I learned to play, guitar, glute, tin whistle all back in my high school year but never kept playing
+                    I learned to play, guitar, glute, tin whistle all back in my high school year
+                    but never kept playing
                     them.
                 </p>
                 <img class="music-note rounded img-thumbnail col-sm col-md col-lg-5 col-xl-4"
@@ -131,43 +190,42 @@
 
     <!-- inside music section
           Favourite albums-->
-    <section id="favourite-albums" class="favourite-albums py-5">
+    <section id="favourite-albums" class="favourite-albums ">
         <div class="container">
-            <h2 class="text-md-center text-sm-center text-lg-left text-xl-left ">Favourite albums</h2>
-            <div class="row" id="fave-albums">
-                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2">
+            <h2 class="text-md-center text-sm-center text-lg-left text-xl-left ">Favourite albums
+            </h2>
+            <div class="row " id="fave-albums">
+                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2 d-flex align-items-stretch">
                     <div class="music-cards card">
                         <a href="#album1"><img
                                 src=" https://upload.wikimedia.org/wikipedia/en/7/77/Head_In_The_Clouds_II_88rising.jpg"
                                 class="card-img-top" alt=" ..."></a>
-
-                        <div class="card-body">
+                        <div class="badge-info-badge">
+                            <span class="badge badge-pill badge-genre">Alternative/Indie</span>
+                        </div>
+                        <div class="card-body  d-flex flex-column justify-content-between align-items-start">
                             <h5 class="card-title">Head In The Clouds || </h5>
                             <ul class="list-group list-group-flush">
                                 <li>Artist: <span>88&Rising</span></li>
-                                <li class="my-2">Genre: <span
-                                        class="card-listing rounded-pill px-2 py-1">Alternative/Indie</span>
-                                    <span class="card-listing rounded-pill px-2 py-1">R&B/SOUL</span> <span
-                                        class="card-listing rounded-pill px-2 py-1">Hip-Hop/Rap</span>
-                                </li>
                                 <li>Duration: <span> 51 mins 23 sec</span></li>
                             </ul>
                             <a href="https://open.spotify.com/album/7bOpX6Ilc9UCFmH9uGyUDy"
                                 class="btn btn-primary mt-2">Check out on spotify</a>
                         </div>
+
                     </div>
                 </div>
-                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2">
-                    <div class="music-cards card">
+                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2 d-flex align-items-stretch">
+                    <div class="music-cards card ">
                         <a href="#album2"><img src="https://i.scdn.co/image/ab67616d00001e0256ac7b86e090f307e218e9c8"
                                 class="card-img-top" alt="..."></a>
-                        <div class="card-body">
+                        <div class="badge-info-badge">
+                            <span class="badge badge-pill badge-genre">Alternative/Indie</span>
+                        </div>
+                        <div class="card-body  d-flex flex-column justify-content-between align-items-start">
                             <h5 class="card-title">thank you, next </h5>
                             <ul class="list-group list-group-flush">
                                 <li>Artist: <span>Ariana Grande</span></li>
-                                <li class="my-2">Genre: <span class="card-listing rounded-pill px-2 py-1">Pop</span>
-                                    <span class="card-listing rounded-pill px-2 py-1">R&B/SOUL</span>
-                                </li>
                                 <li>Duration: <span> 41 min 10 sec</span></li>
                             </ul>
                             <a href="https://open.spotify.com/album/2fYhqwDWXjbpjaIJPEfKFw"
@@ -175,37 +233,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2">
+                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2 d-flex align-items-stretch">
                     <div class="music-cards card">
                         <img src="https://www.worldebazaar.com/wp-content/uploads/2022/05/BREATH-OF-LOVE-OPTI-1.jpg"
                             class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="badge-info-badge">
+                            <span class="badge badge-pill badge-genre">Alternative/Indie</span>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between align-items-start">
                             <h5 class="card-title">Breath of Love: Last Piece</h5>
                             <ul class="list-group list-group-flush">
                                 <li>Artist: <span>GOT7</span></li>
-                                <li class="my-2">Genre: <span class="card-listing rounded-pill px-2 py-1">K-Pop</span>
-                                    <span class="card-listing rounded-pill px-2 py-1">R&B/SOUL</span> <span
-                                        class="card-listing rounded-pill px-2 py-1">Korean Dance</span>
-                                </li>
-                                <li>Duration: <span> 32 min 34 sec</span></li>
-                            </ul>
-                            <a href="https://open.spotify.com/album/5vL6vinpOUVWOV2T8VjL4H"
-                                class="btn btn-primary mt-2">Check out on spotify</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2">
-                    <div class="music-cards card">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/a/a0/Ariana_Grande_-_Positions.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Positions </h5>
-                            <ul class="list-group list-group-flush">
-                                <li>Artist: <span>Ariana Grande</span></li>
-                                <li class="my-2">Genre:
-                                    <span class="card-listing rounded-pill px-2 py-1">R&B/SOUL</span> <span
-                                        class="card-listing rounded-pill px-2 py-1">Pop</span>
-                                </li>
                                 <li>Duration: <span> 41 min 14 sec</span></li>
                             </ul>
                             <a href="https://open.spotify.com/album/3euz4vS7ezKGnNSwgyvKcd"
@@ -213,18 +251,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2">
+                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2 d-flex align-items-stretch">
                     <div class="music-cards card">
                         <img src="https://www.worldebazaar.com/wp-content/uploads/2022/05/BREATH-OF-LOVE-OPTI-1.jpg"
                             class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="badge-info-badge">
+                            <span class="badge badge-pill badge-genre">Alternative/Indie</span>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between align-items-start">
                             <h5 class="card-title">Breath of Love: Last Piece</h5>
                             <ul class="list-group list-group-flush">
                                 <li>Artist: <span>GOT7</span></li>
-                                <li class="my-2">Genre: <span class="card-listing rounded-pill px-2 py-1">K-Pop</span>
-                                    <span class="card-listing rounded-pill px-2 py-1">R&B/SOUL</span> <span
-                                        class="card-listing rounded-pill px-2 py-1">Korean Dance</span>
-                                </li>
                                 <li>Duration: <span> 32 min 34 sec</span></li>
                             </ul>
                             <a href="https://open.spotify.com/album/5vL6vinpOUVWOV2T8VjL4H"
@@ -232,21 +269,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2">
+                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2 d-flex align-items-stretch">
                     <div class="music-cards card">
                         <a href="#album1"><img
                                 src=" https://upload.wikimedia.org/wikipedia/en/7/77/Head_In_The_Clouds_II_88rising.jpg"
                                 class="card-img-top" alt=" ..."></a>
-
-                        <div class="card-body">
+                        <div class="badge-info-badge">
+                            <span class="badge badge-pill badge-genre">Alternative/Indie</span>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between align-items-start">
                             <h5 class="card-title">Head In The Clouds || </h5>
                             <ul class="list-group list-group-flush">
                                 <li>Artist: <span>88&Rising</span></li>
-                                <li class="my-2">Genre: <span
-                                        class="card-listing rounded-pill px-2 py-1">Alternative/Indie</span>
-                                    <span class="card-listing rounded-pill px-2 py-1">R&B/SOUL</span> <span
-                                        class="card-listing rounded-pill px-2 py-1">Hip-Hop/Rap</span>
-                                </li>
                                 <li>Duration: <span> 51 mins 23 sec</span></li>
                             </ul>
                             <a href="https://open.spotify.com/album/7bOpX6Ilc9UCFmH9uGyUDy"
@@ -254,18 +288,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2">
+                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2 d-flex align-items-stretch">
                     <div class="music-cards card">
                         <img src="https://upload.wikimedia.org/wikipedia/en/a/a0/Ariana_Grande_-_Positions.png"
                             class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="badge-info-badge">
+                            <span class="badge badge-pill badge-genre">Alternative/Indie</span>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between align-items-start">
                             <h5 class="card-title">Positions </h5>
                             <ul class="list-group list-group-flush">
                                 <li>Artist: <span>Ariana Grande</span></li>
-                                <li class="my-2">Genre:
-                                    <span class="card-listing rounded-pill px-2 py-1">R&B/SOUL</span> <span
-                                        class="card-listing rounded-pill px-2 py-1">Pop</span>
-                                </li>
                                 <li>Duration: <span> 41 min 14 sec</span></li>
                             </ul>
                             <a href="https://open.spotify.com/album/3euz4vS7ezKGnNSwgyvKcd"
@@ -273,17 +306,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2">
+                <div class="col col-md-4 col-lg-4 col-xl-3 mb-2 d-flex align-items-stretch">
                     <div class="music-cards card">
                         <a href="#album2"><img src="https://i.scdn.co/image/ab67616d00001e0256ac7b86e090f307e218e9c8"
                                 class="card-img-top" alt="..."></a>
-                        <div class="card-body">
+                        <div class="badge-info-badge">
+                            <span class="badge badge-pill badge-genre">Alternative/Indie</span>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between align-items-start">
                             <h5 class="card-title">thank you, next </h5>
                             <ul class="list-group list-group-flush">
                                 <li>Artist: <span>Ariana Grande</span></li>
-                                <li class="my-2">Genre: <span class="card-listing rounded-pill px-2 py-1">Pop</span>
-                                    <span class="card-listing rounded-pill px-2 py-1">R&B/SOUL</span>
-                                </li>
                                 <li>Duration: <span> 41 min 10 sec</span></li>
                             </ul>
                             <a href="https://open.spotify.com/album/2fYhqwDWXjbpjaIJPEfKFw"
@@ -297,14 +330,16 @@
 
     <section id="detail-albums" class="detail-albums py-5">
         <div class="container">
-            <h2 class="text-md-center text-sm-center text-lg-left text-xl-left ">Dive in the albums</h2>
+            <h2 class="text-md-center text-sm-center text-lg-left text-xl-left ">Dive in the albums
+            </h2>
             <hr>
             <div class="mb-5">
                 <img class="img-fluid" type=" button" data-toggle="collapse" data-target="#album1" aria-expanded="false"
                     aria-controls="album1" src="https://i.ytimg.com/vi/HVJvtea92oQ/maxresdefault.jpg" alt="">
                 <div id="album1" class="collapse">
 
-                    <h4 class="text-md-center text-sm-center text-lg-left text-xl-left mt-2">Head In The Clouds|| </h4>
+                    <h4 class="text-md-center text-sm-center text-lg-left text-xl-left mt-2">Head In
+                        The Clouds|| </h4>
                     <ul class="list-group list-group-flush">
                         <li class="my-2">Genre: <span
                                 class="card-listing rounded-pill px-2 py-1">Alternative/Indie</span>
@@ -314,43 +349,59 @@
                         <li>Duration: <span> 51 mins 23 sec</span></li>
                     </ul>
                     <span><b>Track List</b></span>
-                    <table class="table table-hover mx-auto">
+                    <table class="table table-hover table-striped mx-auto">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Ttile</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Artist</th>
+                                <th scope="col">Duration</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
                                 <td>These Nights</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Stange Land</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td colspan="2">need is your love</td>
+                                <td ">need is your love</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
                             </tr>
                             <tr>
-                                <th scope="row">4</th>
-                                <td colspan="2">i love you 3000</td>
+                                <th scope=" row">4</th>
+                                <td>i love you 3000</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
                             </tr>
                             <tr>
                                 <th scope="row">5</th>
-                                <td colspan="2">breathe</td>
+                                <td>breathe</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <p>Favourite song from this album is <b>I love you 3000 ft Jackson Wang</b>. This song was inspired
+
+                    <p>Favourite song from this album is <b>I love you 3000 ft Jackson Wang</b>.
+                        This song was inspired
                         by
                         the movie
-                        Avenger- Infinity War. No spolier but you have to watch the movie to understand why. Absolutley
+                        Avenger- Infinity War. No spolier but you have to watch the movie to
+                        understand why. Absolutley
                         beautiful collaberation between
-                        Stephanie who written and sang the song and had Jackson Wang feature the guy side of the song.
+                        Stephanie who written and sang the song and had Jackson Wang feature the guy
+                        side of the song.
                     </p>
                 </div>
             </div>
@@ -360,7 +411,8 @@
                     aria-controls="album2"" src=" https://i.ytimg.com/vi/EEhZAHZQyf4/maxresdefault.jpg" alt="">
                 <div id="album2" class="collapse">
 
-                    <h4 class="text-md-center text-sm-center text-lg-left text-xl-left mt-2">thank you, next</h4>
+                    <h4 class="text-md-center text-sm-center text-lg-left text-xl-left mt-2">thank
+                        you, next</h4>
                     <ul class="list-group list-group-flush">
                         <li class="my-2">Genre: <span class="card-listing rounded-pill px-2 py-1">Pop</span>
                             <span class="card-listing rounded-pill px-2 py-1">R&B/SOUL</span>
@@ -372,31 +424,62 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Ttile</th>
+                                <th scope="col">Title</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
                                 <td>These Nights</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
+                                <td><button type="button" class="btn btn-outline-danger float-right">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Stange Land</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
+                                <td><button type="button" class="btn btn-outline-danger float-right">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td colspan="2">need is your love</td>
+                                <td ">need is your love</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
+                                <td><button type=" button" class="btn btn-outline-danger float-right">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope=" row">4</th>
+                                <td>i love you 3000</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
+                                <td><button type="button" class="btn btn-outline-danger float-right">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>breathe</td>
+                                <td>88&Rising</td>
+                                <td>3 mins 20 sec</td>
+                                <td><button type="button" class="btn btn-outline-danger float-right">Delete</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <p>Favourite song from this album is <b>I love you 3000 ft Jackson Wang</b>. This song was inspired
+                    <p>Favourite song from this album is <b>I love you 3000 ft Jackson Wang</b>.
+                        This song was inspired
                         by
                         the movie
-                        Avenger- Infinity War. No spolier but you have to watch the movie to understand why. Absolutley
+                        Avenger- Infinity War. No spolier but you have to watch the movie to
+                        understand why. Absolutley
                         beautiful collaberation between
-                        Stephanie who written and sang the song and had Jackson Wang feature the guy side of the song.
+                        Stephanie who written and sang the song and had Jackson Wang feature the guy
+                        side of the song.
                     </p>
                 </div>
             </div>
@@ -406,11 +489,13 @@
           overrated albums-->
     <section id="overrated-albums" class="overrated py-5">
         <div class="container">
-            <h2 class="text-md-center text-sm-center text-lg-left text-xl-left"> Overated Albums </h2>
+            <h2 class="text-md-center text-sm-center text-lg-left text-xl-left"> Overated Albums
+            </h2>
             <div class="row">
                 <p class=" col-sm col-md col-lg-5 col-xl-4 ">
                     Nothing to say but just not my favourite...
-                    Thought I would enjoy it but couldn't get into the vibe of the album. Love his other albums though
+                    Thought I would enjoy it but couldn't get into the vibe of the album. Love his
+                    other albums though
                 </p>
                 <img class="music-note rounded img-thumbnail col-sm col-md col-lg-7 col-xl-8"
                     src="https://stoprobotvinyl.ru/upload/iblock/c95/c95bd6f46a072e0e6ac9fa27072c0fc6.jpeg" alt="">
@@ -421,7 +506,8 @@
     <!-- Music artist section-->
     <section id="artist">
         <div class="container py-5">
-            <h2 class="text-md-center text-sm-center text-lg-left text-xl-left ">Favourite Artist</h2>
+            <h2 class="text-md-center text-sm-center text-lg-left text-xl-left ">Favourite Artist
+            </h2>
             <hr>
             <a class="btn" type="button" data-toggle="collapse" data-target="#fave-artist" aria-expanded="false"
                 aria-controls="fave-artist">
@@ -436,16 +522,25 @@
                             <h2 class="card-title ">Ariana Grande</h2>
                             <p class="card-text ">
 
-                                Ariana's music career began in 2011 with the soundtrack album "Music from Victorious".
-                                In 2013, she released her first studio album Yours Truly, which entered atop the US
-                                Billboard 200. The album's lead single, The Way, opened in the top 10 of the Billboard
-                                Hot 100, with critics comparing her wide vocal range to that of Mariah Carey.
+                                Ariana's music career began in 2011 with the soundtrack album "Music
+                                from Victorious".
+                                In 2013, she released her first studio album Yours Truly, which
+                                entered atop the US
+                                Billboard 200. The album's lead single, The Way, opened in the top
+                                10 of the Billboard
+                                Hot 100, with critics comparing her wide vocal range to that of
+                                Mariah Carey.
 
-                                As of June 2017, Ariana's music videos had been viewed a total of more than nine billion
-                                times online. Her accolades include three American Music Awards, three MTV Europe Music
-                                Awards, an MTV Video Music Award and four Grammy Award nominations. All three of her
-                                albums have been certified platinum by the RIAA. She has supported a range of charities
-                                and has a large following on social media. In 2016, Time named Ariana one of the 100
+                                As of June 2017, Ariana's music videos had been viewed a total of
+                                more than nine billion
+                                times online. Her accolades include three American Music Awards,
+                                three MTV Europe Music
+                                Awards, an MTV Video Music Award and four Grammy Award nominations.
+                                All three of her
+                                albums have been certified platinum by the RIAA. She has supported a
+                                range of charities
+                                and has a large following on social media. In 2016, Time named
+                                Ariana one of the 100
                                 most influential people in the world on their annual list.</p>
                             <a href="https://www.arianagrande.com/" class="site">See more!</a>
                         </div>
@@ -536,7 +631,8 @@
             <div class="card text-center">
                 <div class="card-body pb-1">
                     <h5 class="card-title">Check more of me!</h5>
-                    <p class="card-text">A simple gamer, coffee drinker, cat lover who enjoys coding!</p>
+                    <p class="card-text">A simple gamer, coffee drinker, cat lover who enjoys
+                        coding!</p>
                     <a href="https://linktr.ee/jannezq" class="btn btn-primary">Click for more!</a>
 
                     <br>

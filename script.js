@@ -18,6 +18,16 @@ function countAlbums() {
   counter.innerText = albumCounts;
 }
 
+function deleteRow() {
+  let deleteBtns = document.querySelectorAll("btn.btn-outline-danger");
+  for (let i = 0; i < deleteBtns.length; i++) {
+    deleteBtns[i].addEventListener("click", (event) => {
+      event.target.closest("tbody > tr").deleteRow();
+    });
+  }
+}
+deleteRow();
+
 window.onload = () => {
   countAlbums();
 };

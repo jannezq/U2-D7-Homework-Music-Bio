@@ -1,12 +1,59 @@
+:root {
+  --font--sofia: "Sofia Sans", sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-.hero {
-  background-color: rgb(253, 242, 244);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-.navbar {
-  background-color: rgb(240, 210, 215) !important;
+
+.jumbotron {
+  animation: fadeIn ease 1s;
+  background-image: linear-gradient(
+      180deg,
+      rgba(71, 60, 66, 0.1599811799719888) 6%,
+      rgba(1, 108, 148, 0) 30%,
+      rgba(0, 140, 181, 0) 48%,
+      rgba(0, 163, 205, 0) 77%,
+      rgba(71, 60, 66, 0.1599811799719888) 100%
+    ),
+    url("https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+  height: 100vh;
+  padding-top: 0;
+  padding-inline: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  color: white;
+  text-shadow: 4px 3px 0px #7a7a7a;
+  font-weight: 700;
+  font-family: var(--font--sofia);
+}
+
+.jumbotron p {
+  font-family: var(--font--sofia);
+  color: #835d5d;
+}
+
+.hero {
+  height: 100vh;
+  background-color: rgb(253, 242, 244);
 }
 
 .profile-img {
@@ -39,12 +86,20 @@ td {
   background-color: rgb(253, 242, 244);
 }
 
-.overrated {
-  background-color: rgb(253, 242, 244);
+.music-cards.card {
+  position: relative;
 }
 
-.music-cards {
-  height: 730px;
+.badge.badge-genre {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #835d5d;
+  color: rgb(243, 242, 241);
+}
+
+.overrated {
+  background-color: rgb(253, 242, 244);
 }
 
 .artist-card {
@@ -84,6 +139,17 @@ td {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
+  .hero {
+    padding-block: 1em;
+  }
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  div#profile-bio h1 {
+    font-size: 40px;
+  }
   .covers {
     width: 200px;
     height: 200px;
@@ -91,19 +157,38 @@ td {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
+  .hero {
+    padding-block: 2em;
+  }
+
   .covers {
     width: 200px;
     height: 200px;
     margin: 0;
   }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-bio {
+    flex: 0 0 41%;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-block: 2em;
+  }
   .profile-img {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 57% 43% 70% 30% / 30% 68% 32% 70%;
+  }
+  div#profile-bio h1 {
+    font-size: 35px;
   }
 
   .covers {
@@ -117,11 +202,43 @@ td {
     width: 300px;
     height: 300px;
   }
+  .profile-img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 57% 43% 70% 30% / 30% 68% 32% 70%;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
   .covers {
     width: 300px;
     height: 300px;
+  }
+
+  .profile-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 57% 43% 70% 30% / 30% 68% 32% 70%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .covers {
+    width: 300px;
+    height: 300px;
+  }
+
+  .profile-img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 57% 43% 70% 30% / 30% 68% 32% 70%;
+    padding-right: 0;
+  }
+
+  .profile-bio {
+    flex: 0 0 41%;
   }
 }
